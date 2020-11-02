@@ -70,7 +70,6 @@ RUN git clone https://github.com/srsLTE/srsGUI && \
 # Get srsLTE, compile and install
 RUN git clone https://github.com/srsLTE/srsLTE.git && \
     cd srsLTE && \
-    git checkout tags/release_19_12 && \
     mkdir build && cd build && \
     cmake ../ && make && make install && \
     ldconfig && srslte_install_configs.sh service
